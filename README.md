@@ -1,101 +1,89 @@
 # Análise de Falhas na Entrega de Rações: Otimizando a Cadeia de Valor do Frango de Corte
 
-Este documento apresenta o diagnóstico estratégico e as recomendações para melhoria operacional da cadeia de entrega de rações, visando otimizar a Cadeia de Valor do Frango de Corte. O projeto utiliza técnicas de Processamento de Linguagem Natural (NLP) para analisar dados de uma pesquisa qualitativa, extrair insights, identificar as causas raiz dos problemas e sugerir ações para a melhoria dos processos.
+## Visão Geral
+
+Este projeto apresenta um diagnóstico estratégico e um plano de ação para resolver as falhas crônicas na cadeia de entrega de rações para a avicultura de corte. A análise utiliza dados de uma pesquisa com 68 stakeholders e aplica Processamento de Linguagem Natural (NLP) para identificar as causas raiz dos problemas e propor uma solução sistêmica, visando otimizar a eficiência operacional e os resultados zootécnicos.
 
 ---
 
-## O Problema Central
+## O Problema em Números: Diagnóstico Quantitativo
 
-Falhas crônicas na entrega de rações afetam toda a cadeia produtiva do frango de corte. Os problemas principais incluem:
-*   Atrasos na entrega, causando jejum das aves.
-*   Volumes incorretos, gerando desperdício.
-*   Erros no tipo de ração fornecida.
-*   Comunicação falha entre os stakeholders.
+A análise dos dados revelou que o problema é sistêmico e de alta severidade, com três categorias críticas se destacando:
 
-## Metodologia de Análise
+| Problema | Frequência | Severidade | Maior Impacto em |
+| :--- | :--- | :--- | :--- |
+| **Atraso ou Falta de Ração** | 40% dos relatos | Alta | Produtores |
+| **Sobra de Ração** | 24% dos relatos | Média | Gestão |
+| **Problemas Logísticos** | 19% dos relatos | Alta | Motoristas |
 
-O diagnóstico foi baseado em uma pesquisa qualitativa com múltiplos atores da cadeia para compreender profundamente os problemas.
+**Insights Chave:**
+*   **Sistemicidade:** 74% dos respondentes relataram mais de um tipo de problema.
+*   **Correlação:** Existe uma alta correlação (0,78) entre falhas de comunicação e problemas logísticos, indicando que a melhoria na comunicação é fundamental.
+*   **Foco em Comunicação:** 87% das sugestões de melhoria mencionam a necessidade de aprimorar a comunicação.
 
-*   **Perfis Analisados:** Produtores, Veterinários/Extensionistas, Motoristas, e Gestão (Fábrica, PCP, Expedição).
-*   **Objetivo:** Mapear as causas raiz dos problemas e propor ações estratégicas.
+### Impactos Quantificados na Cadeia de Valor
 
----
-
-## Resultados: Perspectivas dos Atores
-
-A pesquisa revelou que as falhas são um problema crônico que afeta todos os envolvidos, gerando frustração, preocupação e pressão.
-
-### Produtores (Sentimento: Frustração e Impotência)
-*   **Problemas:** Atrasos (jejum das aves), volumes maiores que o solicitado (sobra), erro no tipo de ração, e falta de informações precisas.
-*   **Impactos:** Prejuízos zootécnicos (redução no ganho de peso, piora na conversão alimentar) e problemas sanitários (aumento de dermatose e problemas intestinais).
-*   **Expectativa:** Entregas pontuais e confiáveis, volumes exatos e comunicação clara.
-
-### Veterinários/Extensionistas (Sentimento: Preocupação Técnica)
-*   **Problemas:** Falhas logísticas interferem no planejamento alimentar e sanitário, e atuam como intermediários na resolução de problemas, gerando desgaste.
-*   **Sugestões:** Implementar um sistema de rastreamento de pedidos e melhorar a comunicação entre fábrica, logística e campo.
-
-### Motoristas (Sentimento: Pressão e Sobrecarga)
-*   **Problemas:** Rotas mal otimizadas, jornadas de trabalho extensas e comunicação inadequada sobre locais e condições de acesso.
-*   **Sugestões:** Implementar um sistema de planejamento de rotas mais eficiente e melhorar a comunicação com a expedição e os produtores.
-
-### Gestão (Sentimento: Consciência dos Desafios Operacionais)
-*   **Problemas:** Falta de visibilidade do estoque em campo, dependência de processos manuais e capacidade limitada de produção e armazenamento.
-*   **Sugestões:** Automação de processos e implementação de um sistema de gestão de estoque com visibilidade em tempo real.
+| Tipo de Impacto | Dado Quantificado |
+| :--- | :--- |
+| **Desempenho Zootécnico** | 82% dos produtores relataram queda no ganho de peso das aves. |
+| **Conversão Alimentar (CA)** | 65% relataram piora na conversão alimentar. |
+| **Impacto Econômico** | Estimativa de perda de **3 a 5%** na conversão alimentar por lote. |
+| **Prejuízos Financeiros** | 74% dos respondentes citaram prejuízos financeiros diretos. |
+| **Custo Operacional** | 58% relataram custos adicionais com replanejamento e alocação de recursos. |
 
 ---
 
-## A Solução: Abordagem Sistêmica em Três Pilares
+## A Solução: Uma Abordagem Sistêmica em Três Pilares
 
-A solução exige uma abordagem integrada e sistêmica que envolve três pilares fundamentais: Comunicação Eficiente, Processos Otimizados e Tecnologia Habilitadora.
+A solução proposta é baseada em uma abordagem integrada para atacar as causas raiz dos problemas.
 
 ### 1. Comunicação Eficiente
-*   **Ação:** Implementar um canal centralizado (aplicativo ou portal online) para pedidos e acompanhamento de status em tempo real.
-*   **Interna:** Melhorar a comunicação e o alinhamento entre PCP, expedição e logística.
+*   **Ação:** Implementar um **canal centralizado** (aplicativo ou portal) para gestão de pedidos, acompanhamento de status em tempo real e comunicação de ocorrências.
+*   **Alinhamento Interno:** Melhorar a integração e a comunicação entre as equipes de PCP, expedição e logística.
 
 ### 2. Processos Otimizados
-*   **Ação:** Mapear e redesenhar o fluxo de entrega para eliminar gargalos.
-*   **Foco na Sobra:** Implementar um sistema de "Pedidos Programados com Confirmação" para evitar o envio de ração desnecessária.
+*   **Ação:** Mapear e redesenhar o fluxo de trabalho, desde a solicitação do pedido até a entrega, para eliminar gargalos.
+*   **Gestão de Sobras:** Implementar um sistema de **"Pedidos Programados com Confirmação"**, onde o produtor valida ou ajusta a entrega antes do envio, reduzindo o desperdício.
 
 ### 3. Tecnologia Habilitadora
-*   **Logística:** Adotar um Sistema de Gestão de Entregas (TMS) para otimizar rotas e rastrear os caminhões.
-*   **Estoque:** Instalar sensores de nível nos silos das granjas para visibilidade do estoque em tempo real.
-*   **Planejamento:** Utilizar análise de dados e modelos de previsão para otimizar a produção.
+*   **Logística:** Adotar um **Sistema de Gestão de Entregas (TMS)** para otimizar rotas, sequenciar entregas e rastrear os veículos em tempo real.
+*   **Estoque:** Instalar **sensores de nível (IoT) nos silos** das granjas para monitoramento remoto do estoque, permitindo um planejamento de produção proativo.
+*   **Planejamento:** Utilizar **análise de dados e modelos de previsão** para otimizar a produção e o roteamento.
 
 ---
 
-## Benefícios Esperados
+## Roadmap de Implementação (12 Meses)
 
-| Para a Empresa | Para os Produtores | Para os Animais |
-| :--- | :--- | :--- |
-| Aumento de Produtividade | Confiabilidade (entregas pontuais) | Bem-estar Animal (nutrição sem jejum) |
-| Redução de Custos | Rentabilidade (melhor desempenho zootécnico) | Saúde Melhorada (redução de problemas sanitários) |
-| Melhoria de Imagem e Competitividade | Redução de Estresse | Desempenho Zootécnico Otimizado |
+| Fase | Período | Foco | Meta Principal |
+| :--- | :--- | :--- | :--- |
+| **1: Diagnóstico e Planejamento** | Nov/Dez 2025 | Mapeamento de processos e definição de KPIs. | Redução de 15% nas falhas em 6 meses. |
+| **2: Implementação Tecnológica** | Jan/Mar 2026 | Implantação da plataforma e dos sensores de nível piloto. | 100% dos pedidos via sistema até o final do 1º trimestre. |
+| **3: Otimização Logística** | Abr/Jun 2026 | Implementação do TMS e revisão dos processos. | Redução de 20% no tempo médio de entrega. |
+| **4: Expansão e Consolidação** | Jul/Dez 2026 | Expansão das soluções para 100% das granjas. | Redução de 80% nas falhas de entrega até o final de 2026. |
 
 ---
 
-## Sobre este Repositório
+## Sobre Este Repositório
 
-Este repositório contém todo o código e os artefatos utilizados para realizar a análise descrita acima.
+Este repositório contém o código-fonte e os artefatos da análise de dados descrita. O objetivo é fornecer uma base reproduzível para a exploração dos dados e validação dos insights.
 
 ### Como Executar a Análise
 
-A análise completa pode ser executada de duas maneiras:
+A análise pode ser executada de duas maneiras:
 
-1.  **Via script principal:**
-    Execute o `main.py` na raiz do projeto. Ele irá processar os dados, gerar as análises e salvar os gráficos na pasta `plots/`.
+1.  **Via Script Principal:**
+    O `main.py` orquestra todo o pipeline: processa os dados, gera as análises e salva os gráficos na pasta `plots/`.
     ```bash
     python main.py
     ```
 
 2.  **Via Jupyter Notebook:**
-    Para uma análise interativa e visualização detalhada, abra e execute as células do notebook `notebooks/analise_pesquisa_fab_racao.ipynb`.
+    Para uma análise interativa e passo a passo, utilize o notebook `notebooks/analise_pesquisa_fab_racao.ipynb`.
     ```bash
     jupyter notebook notebooks/analise_pesquisa_fab_racao.ipynb
     ```
 
 ### Requisitos e Instalação
-
-Para executar este projeto, você precisará do Python 3.8+ e das dependências listadas no arquivo `requirements.txt`.
 
 1.  **Clone o repositório:**
     ```bash
@@ -103,14 +91,10 @@ Para executar este projeto, você precisará do Python 3.8+ e das dependências 
     cd mealfactorynlpanalysis
     ```
 
-2.  **Crie e ative um ambiente virtual (recomendado):**
+2.  **Crie um ambiente virtual e instale as dependências:**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # No Windows: venv\Scripts\activate
-    ```
-
-3.  **Instale as dependências:**
-    ```bash
+    source venv/bin/activate
     pip install -r requirements.txt
     ```
 
@@ -118,27 +102,21 @@ Para executar este projeto, você precisará do Python 3.8+ e das dependências 
 
 ```
 /
-├── assets/              # Arquivos de dados brutos (ex: .xlsx da pesquisa)
-├── docs/                # Documentos de análise gerados (ex: .txt, .md)
-├── knowledge/           # Materiais de referência e conhecimento
-├── notebooks/           # Jupyter Notebooks com a análise exploratória e principal
-├── plots/               # Gráficos e imagens gerados pela análise
-├── presentation/        # Apresentação do projeto
+├── assets/              # Arquivos de dados brutos (ex: .xlsx)
+├── docs/                # Documentos de análise gerados
+├── knowledge/           # Materiais de referência
+├── notebooks/           # Jupyter Notebooks da análise
+├── plots/               # Gráficos e imagens gerados
+├── presentation/        # Apresentações do projeto
 ├── src/                 # Código-fonte modularizado
-│   ├── utils/           # Módulos de utilidade (ex: logger)
-│   ├── generate_charts.py
-│   ├── process_and_segment_data.py
-│   └── strategic_analysis.py
 ├── .gitignore
-├── main.py              # Script principal para orquestrar a execução da análise
+├── main.py              # Script principal para orquestrar a análise
 ├── README.md            # Este arquivo
 └── requirements.txt     # Dependências do projeto
 ```
 
 ### Próximos Passos
 
-- **Dashboard Interativo**: Desenvolver um dashboard com Streamlit ou Dash para permitir que usuários não técnicos explorem os resultados da pesquisa de forma interativa.
-- **Automação do Pipeline**: Criar um pipeline automatizado (ex: com Airflow ou GitHub Actions) que execute a análise periodicamente à medida que novos dados da pesquisa são adicionados.
-- **API de Classificação**: Expor o modelo de clusterização ou sentimento treinado através de uma API REST para classificar novas respostas em tempo real.
-- **Aprimoramento dos Modelos**: Experimentar com modelos de linguagem mais avançados ou realizar fine-tuning específico com dados da empresa para melhorar ainda mais a precisão da classificação e clusterização.
-- **Integração com Banco de Dados**: Migrar o armazenamento de dados de arquivos Excel para um banco de dados (como PostgreSQL ou SQLite) para melhor escalabilidade e gerenciamento.
+*   **Validação Aprofundada:** Realizar workshops com os stakeholders para refinar o diagnóstico.
+*   **Desenvolvimento de Protótipos:** Criar e testar protótipos das soluções (App, Sensores, TMS) em um projeto piloto com 5-10 granjas.
+*   **Dashboard de Monitoramento:** Construir um dashboard com os KPIs de entrega para acompanhamento em tempo real por todos os envolvidos.
