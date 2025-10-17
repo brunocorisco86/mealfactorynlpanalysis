@@ -1,63 +1,78 @@
-# Análise de Falhas na Entrega de Rações
+# Análise de Pesquisa sobre Falhas na Entrega de Rações
 
-## Introdução
+Este projeto realiza uma análise aprofundada de dados de uma pesquisa qualitativa sobre as falhas percebidas no processo de entrega de rações. Utilizando técnicas de Processamento de Linguagem Natural (NLP), o objetivo é extrair insights valiosos, identificar as principais causas dos problemas e sugerir ações estratégicas para a melhoria dos processos.
 
-Este projeto realiza uma análise aprofundada das falhas na entrega de rações, com base em dados de uma pesquisa interna. O objetivo é identificar os principais problemas, compreender as suas causas e propor soluções estratégicas para otimizar o processo logístico, melhorar a satisfação dos clientes e garantir o bem-estar animal.
+## Features
 
-A análise utiliza técnicas de Processamento de Linguagem Natural (PLN) para extrair insights a partir das respostas qualitativas da pesquisa, segmentando os resultados por perfil de entrevistado (Produtor, Motorista, Gestão, etc.) e gerando visualizações de dados para facilitar a compreensão dos resultados.
+- **Processamento e Segmentação de Dados**: Carrega os dados da pesquisa a partir de um arquivo Excel, realiza a limpeza e segmenta as respostas por perfil de respondente.
+- **Análise de Frequência e Pareto**: Identifica e quantifica os principais problemas e sugestões, gerando gráficos de Pareto para priorizar as causas mais impactantes.
+- **Análise de Tópicos com LDA**: Utiliza a modelagem de tópicos (Latent Dirichlet Allocation) para uma primeira identificação dos temas gerais mencionados nas respostas.
+- **Análise de Sentimento com Transformers**: Aplica um modelo de linguagem pré-treinado (`DistilBERT`) para classificar o sentimento de cada resposta (positivo, negativo ou neutro), compreendendo a percepção geral dos participantes.
+- **Clusterização Semântica**: Emprega `Sentence Transformers` para converter as respostas em vetores semânticos (embeddings) e os agrupa por similaridade, permitindo a descoberta de clusters de problemas e sugestões com alta coesão contextual.
+- **Visualização de Dados**: Gera e exibe múltiplos gráficos e visualizações, incluindo nuvens de palavras, gráficos de barras, diagramas de Pareto e visualizações t-SNE dos clusters semânticos.
+- **Notebook Interativo**: Centraliza toda a análise em um Jupyter Notebook (`analise_pesquisa_fab_racao.ipynb`), permitindo a execução passo a passo e a exploração dos resultados.
 
-## Estrutura do Projeto
+## Estrutura de Pastas
 
-O repositório está organizado da seguinte forma:
+```
+/
+├── assets/              # Arquivos de dados brutos (ex: .xlsx da pesquisa)
+├── docs/                # Documentos de análise gerados (ex: .txt, .md)
+├── knowledge/           # Materiais de referência e conhecimento
+├── notebooks/           # Jupyter Notebooks com a análise exploratória e principal
+├── plots/               # Gráficos e imagens gerados pela análise
+├── src/                 # Código-fonte modularizado
+│   ├── utils/           # Módulos de utilidade (ex: logger)
+│   ├── generate_charts.py
+│   ├── process_and_segment_data.py
+│   └── strategic_analysis.py
+├── .gitignore
+├── main.py              # Script principal para orquestrar a execução da análise
+├── README.md            # Este arquivo
+└── requirements.txt     # Dependências do projeto
+```
 
-- **`assets/`**: Contém os dados brutos da pesquisa em formato `.xlsx`.
-- **`docs/`**: Armazena a documentação do projeto, incluindo a análise detalhada e os resultados consolidados.
-- **`notebooks/`**: Contém os notebooks Jupyter utilizados para a exploração e análise inicial dos dados.
-- **`plots/`**: Guarda os gráficos gerados pela análise, como os diagramas de Pareto e os gráficos de barras.
-- **`src/`**: Inclui os scripts Python responsáveis pelo processamento, análise e visualização dos dados.
-  - **`process_and_segment_data.py`**: Script para processar e segmentar os dados da pesquisa por perfil.
-  - **`generate_charts.py`**: Script para gerar os gráficos e visualizações.
-  - **`strategic_analysis.py`**: Script para realizar a análise estratégica e priorização de problemas.
-  - **`utils/`**: Módulos de utilidades, como o de logging.
+## Requisitos e Instalação
 
-## Como Executar a Análise
+Para executar este projeto, você precisará do Python 3.8+ e das dependências listadas no arquivo `requirements.txt`.
 
-Para executar a análise completa e gerar os resultados, siga os passos abaixo:
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/brunocorisco86/mealfactorynlpanalysis.git
+    cd mealfactorynlpanalysis
+    ```
 
-1. **Instale as dependências:**
+2.  **Crie e ative um ambiente virtual (recomendado):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # No Windows: venv\Scripts\activate
+    ```
 
-   ```bash
-   pip install pandas matplotlib seaborn
-   ```
+3.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. **Execute os scripts de análise na ordem correta:**
+## Como Executar
 
-   ```bash
-   python src/process_and_segment_data.py
-   python src/generate_charts.py
-   python src/strategic_analysis.py
-   ```
+A análise completa pode ser executada de duas maneiras:
 
-Após a execução, os resultados atualizados estarão disponíveis nos diretórios `docs/` e `plots/`.
+1.  **Via script principal:**
+    Execute o `main.py` na raiz do projeto. Ele irá processar os dados, gerar as análises e salvar os gráficos na pasta `plots/`.
+    ```bash
+    python main.py
+    ```
 
-## Principais Descobertas
+2.  **Via Jupyter Notebook:**
+    Para uma análise interativa e visualização detalhada, abra e execute as células do notebook `notebooks/analise_pesquisa_fab_racao.ipynb`.
+    ```bash
+    jupyter notebook notebooks/analise_pesquisa_fab_racao.ipynb
+    ```
 
-A análise revelou que os problemas na entrega de rações são sistêmicos e afetam toda a cadeia produtiva. As principais categorias de falhas identificadas foram:
+## Possíveis Próximos Passos (Next Steps)
 
-1.  **Gestão de Insumos e Estoque**: Problemas relacionados com a falta ou sobra de ração, e a capacidade de produção da fábrica.
-2.  **Processos e Informação**: Falhas na comunicação entre os diferentes setores e a falta de automação nos processos.
-3.  **Logística e Distribuição**: Atrasos na entrega, erros de tipo ou local de descarga e problemas no planejamento de rotas.
-
-A análise de Pareto destacou que a **Gestão de Insumos e Estoque** é a categoria com maior impacto, representando a maior parte das ocorrências.
-
-## Recomendações
-
-Com base na análise, a principal recomendação é a **implementação de um sistema de gestão de estoque em tempo real**, que inclua sensores de nível nos silos das granjas. Esta ação permitiria um planejamento de demanda mais preciso e proativo, reduzindo significativamente os casos de falta e sobra de ração.
-
-Outras ações estratégicas sugeridas incluem:
-
-- **Otimizar o planejamento de rotas** através de um sistema de gestão de transportes (TMS).
-- **Criar um canal de comunicação centralizado** para facilitar a interação entre produtores, motoristas e a fábrica.
-- **Automatizar os processos de pedidos** para reduzir erros manuais e agilizar o fluxo de informação.
-
-Para mais detalhes, consulte o documento de análise completa em `docs/Análise da Pesquisa sobre Falhas na Entrega de Rações.md`.
+- **Dashboard Interativo**: Desenvolver um dashboard com Streamlit ou Dash para permitir que usuários não técnicos explorem os resultados da pesquisa de forma interativa.
+- **Automação do Pipeline**: Criar um pipeline automatizado (ex: com Airflow ou GitHub Actions) que execute a análise periodicamente à medida que novos dados da pesquisa são adicionados.
+- **API de Classificação**: Expor o modelo de clusterização ou sentimento treinado através de uma API REST para classificar novas respostas em tempo real.
+- **Aprimoramento dos Modelos**: Experimentar com modelos de linguagem mais avançados ou realizar fine-tuning específico com dados da empresa para melhorar ainda mais a precisão da classificação e clusterização.
+- **Integração com Banco de Dados**: Migrar o armazenamento de dados de arquivos Excel para um banco de dados (como PostgreSQL ou SQLite) para melhor escalabilidade e gerenciamento.
