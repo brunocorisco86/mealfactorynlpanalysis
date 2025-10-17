@@ -1,0 +1,67 @@
+Text file: column_names.txt
+Latest content with line numbers:
+1	ID
+2	Hora de início
+3	Hora de conclusão
+4	Email
+5	Nome
+6	Hora da última modificação
+7	Qual o seu perfil?
+8	Como você faz os pedidos de ração? (WhatsApp, Telefone/Ligação)
+9	Os envios programados para serem enviados automaticamente, tem funcionado na sua granja? Comente se normalmente quando a ração chega o silo esta vazio ou se ainda tem bastante ração dentro.
+10	
+11	
+12	Como você costuma receber a ração? Há um padrão de horário ou frequência?
+13	Quais tipos de falhas na entrega você já enfrentou? Pode descrever um caso recente?
+14	Quando ocorre um problema (falta ou excesso), quem decide o que fazer? Já houve dúvidas sobre quem é responsável?
+15	Já descarregaram ração errada na sua granja? O que houve? Como foi conduzido?
+16	Como você costuma comunicar problemas com a entrega? A resposta costuma ser rápida?
+17	Quais impactos essas falhas causaram na sua produção?
+18	O que você acredita que poderia ser feito para evitar essas falhas? Traga sugestões de melhoria
+19	Como vocês monitoram a efetividade da entrega de ração nas propriedades? 
+20	Quais são os impactos das falhas de entrega na relação com os produtores?
+21	Como é feita a articulação entre fábrica, logística e assistência técnica?
+22	Compartilhe um caso de falta/sobra de ração que ocorreu recentemente, pode se um ou mais se houver.
+23	Há algum tipo de protocolo para lidar com falhas?
+24	Na sua opinião, porque ocorre falta de ração a campo? 
+25	Na sua opinião, porque tem muita sobra de ração no final do lote? Qual a causa raiz deste problema? 
+26	Que sugestões você tem para melhorar a confiabilidade das entregas? Como poderíamos reduzir estas falhas de entrega? Evitar falta, sobra e descargas erradas
+27	Que sugestões você tem para melhorar a confiabilidade das entregas? Como poderíamos reduzir estas falhas de entrega?
+28	Como as falhas na entrega de ração impactam a saúde e desempenho dos lotes?
+29	Você já presenciou ou foi informado sobre problemas relacionados à falhas de entrega de ração?
+30	Como é a comunicação entre você, os produtores e a fábrica?
+31	Há alguma recomendação técnica que costuma ser ignorada por conta de falhas logísticas?
+32	O que você acredita que poderia ser feito para reduzir essas falhas? Na sua opinião, como poderíamos melhorar e evitar estes tipos de situação de erro de descarga, falta e sobra de ração?
+33	Na sua opinião, porque tem muita sobra de ração no final do lote? Qual a causa raiz deste problema? 2
+34	Quais são os principais indicadores que vocês acompanham relacionados à entrega? Como vocês mensuram a efetividade na entrega de rações?
+35	Como são tratadas as ocorrências de falhas nas entregas?
+36	Há processos formais de análise de causa e ação corretiva?
+37	Como é a comunicação entre os setores envolvidos na entrega?
+38	Na sua opinião, como poderíamos melhorar o processo e evitar falhas na entrega de ração, sejam elas sobra, falta ou erro na entrega?
+39	
+40	Como é o processo de organização das cargas?
+41	Como as cargas são priorizadas? Quais critérios são usados?
+42	Quais são os principais motivos de atrasos ou falhas nas entregas?
+43	Como é feita a comunicação com os motoristas?
+44	Como é feita a comunicação com o PCP?
+45	Há algum tipo de controle ou indicador que monitore as entregas?
+46	O que você acredita que poderia ser ajustado para reduzir falhas nas entregas?
+47	Como é feito o planejamento das produções de ração?
+48	Quais são os principais fatores que afetam o cumprimento do plano?
+49	Como é a integração entre PCP, expedição e logística?
+50	Já houve casos em que o planejamento não foi seguido? Por quê?
+51	Que melhorias você vê como possíveis no processo de planejamento?
+52	Como é o processo de carregamento e conferência da carga antes da saída?
+53	Quais são os principais desafios que você enfrenta durante as entregas?
+54	Já houve situações em que não conseguiu realizar a entrega? O que aconteceu?
+55	Como é a comunicação com a expedição e com os produtores para uma entrega?
+56	O que você acredita que poderia melhorar na logística das entregas, buscando reduzir erros de entrega, falta e sobra de ração?
+57	Você já teve conhecimento ou vivenciou falhas na entrega de ração? Pode compartilhar um exemplo?
+58	Na sua opinião, quais são os principais fatores que contribuem para essas falhas?
+59	Como é a comunicação entre sua área e os demais envolvidos no processo de entrega?
+60	Existem indicadores ou controles que você acompanha relacionados à entrega de ração?
+61	Que tipo de ação você acredita que poderia reduzir ou eliminar as falhas nas entregas?
+62	Há algo mais que você gostaria de compartilhar sobre o tema?
+63	Se pudesse mudar uma coisa no processo para reduzir falhas, qual seria?
+64	Você teria alguma sugestão de melhoria que ainda não foi mencionada?
+65	
