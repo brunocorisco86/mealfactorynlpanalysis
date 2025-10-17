@@ -1,78 +1,68 @@
-# Análise de Pesquisa sobre Falhas na Entrega de Rações
+# 🐔 Análise de Falhas na Entrega de Rações: Otimizando a Cadeia de Valor do Frango de Corte
 
-Este projeto realiza uma análise aprofundada de dados de uma pesquisa qualitativa sobre as falhas percebidas no processo de entrega de rações. Utilizando técnicas de Processamento de Linguagem Natural (NLP), o objetivo é extrair insights valiosos, identificar as principais causas dos problemas e sugerir ações estratégicas para a melhoria dos processos.
+[cite_start]Este documento apresenta o diagnóstico estratégico e as recomendações para melhoria operacional da cadeia de entrega de rações, visando otimizar a Cadeia de Valor do Frango de Corte[cite: 1, 2, 3].
 
-## Features
+## 🚨 O Problema Central
 
-- **Processamento e Segmentação de Dados**: Carrega os dados da pesquisa a partir de um arquivo Excel, realiza a limpeza e segmenta as respostas por perfil de respondente.
-- **Análise de Frequência e Pareto**: Identifica e quantifica os principais problemas e sugestões, gerando gráficos de Pareto para priorizar as causas mais impactantes.
-- **Análise de Tópicos com LDA**: Utiliza a modelagem de tópicos (Latent Dirichlet Allocation) para uma primeira identificação dos temas gerais mencionados nas respostas.
-- **Análise de Sentimento com Transformers**: Aplica um modelo de linguagem pré-treinado (`DistilBERT`) para classificar o sentimento de cada resposta (positivo, negativo ou neutro), compreendendo a percepção geral dos participantes.
-- **Clusterização Semântica**: Emprega `Sentence Transformers` para converter as respostas em vetores semânticos (embeddings) e os agrupa por similaridade, permitindo a descoberta de clusters de problemas e sugestões com alta coesão contextual.
-- **Visualização de Dados**: Gera e exibe múltiplos gráficos e visualizações, incluindo nuvens de palavras, gráficos de barras, diagramas de Pareto e visualizações t-SNE dos clusters semânticos.
-- **Notebook Interativo**: Centraliza toda a análise em um Jupyter Notebook (`analise_pesquisa_fab_racao.ipynb`), permitindo a execução passo a passo e a exploração dos resultados.
+[cite_start]**Falhas crônicas** na entrega de rações afetam toda a cadeia produtiva[cite: 6]. Os problemas principais incluem:
+* [cite_start]**Atrasos na entrega** causando jejum das aves[cite: 7].
+* [cite_start]**Volumes incorretos** gerando desperdício[cite: 8].
+* [cite_start]**Erros no tipo de ração** fornecida[cite: 9].
+* [cite_start]**Comunicação falha** entre os *stakeholders*[cite: 10].
 
-## Estrutura de Pastas
+## 🔎 Metodologia de Análise
 
-```
-/
-├── assets/              # Arquivos de dados brutos (ex: .xlsx da pesquisa)
-├── docs/                # Documentos de análise gerados (ex: .txt, .md)
-├── knowledge/           # Materiais de referência e conhecimento
-├── notebooks/           # Jupyter Notebooks com a análise exploratória e principal
-├── plots/               # Gráficos e imagens gerados pela análise
-├── src/                 # Código-fonte modularizado
-│   ├── utils/           # Módulos de utilidade (ex: logger)
-│   ├── generate_charts.py
-│   ├── process_and_segment_data.py
-│   └── strategic_analysis.py
-├── .gitignore
-├── main.py              # Script principal para orquestrar a execução da análise
-├── README.md            # Este arquivo
-└── requirements.txt     # Dependências do projeto
-```
+[cite_start]O diagnóstico foi baseado em pesquisa qualitativa com **múltiplos atores** [cite: 12][cite_start], segmentando as respostas para identificar percepções e causas raiz[cite: 13, 14, 19]:
+* [cite_start]**Perfis Analisados:** Produtores [cite: 22][cite_start], Veterinários/Extensionistas [cite: 23][cite_start], Motoristas [cite: 24][cite_start], e Gestão (Fábrica, PCP, Expedição)[cite: 25].
+* [cite_start]**Objetivo:** Compreender os problemas, mapear as causas raiz e propor ações estratégicas para otimizar a cadeia de valor[cite: 12, 14, 15, 16].
 
-## Requisitos e Instalação
+## 🗣️ Perspectivas dos Atores e Seus Problemas
 
-Para executar este projeto, você precisará do Python 3.8+ e das dependências listadas no arquivo `requirements.txt`.
+[cite_start]A pesquisa revelou que os sentimentos de **frustração, preocupação e pressão são generalizados**[cite: 247].
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/brunocorisco86/mealfactorynlpanalysis.git
-    cd mealfactorynlpanalysis
-    ```
+### [cite_start]🧑‍🌾 Produtores (Sentimento: Frustração e Impotência) [cite: 40, 42]
+* [cite_start]**Problemas:** Falta de ração (jejum) [cite: 44, 45][cite_start], sobra de ração (volumes maiores que o solicitado) [cite: 46, 47][cite_start], erro no tipo de ração [cite: 48, 49][cite_start], e falta de informações precisas[cite: 50, 51].
+* [cite_start]**Impactos:** **Prejuízos Zootécnicos** (redução no ganho de peso, piora na conversão alimentar) [cite: 53, 54] [cite_start]e **Problemas Sanitários** (aumento de dermatose e problemas intestinais)[cite: 55, 56].
 
-2.  **Crie e ative um ambiente virtual (recomendado):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # No Windows: venv\Scripts\activate
-    ```
+### [cite_start]🩺 Veterinários/Extensionistas (Sentimento: Preocupação Técnica) [cite: 64, 66]
+* [cite_start]**Problemas:** Falhas logísticas interferem no planejamento alimentar e sanitário [cite: 71][cite_start], e há desgaste relacional por atuarem como intermediários[cite: 72, 73].
+* [cite_start]**Sugestões:** Implementar **sistema de rastreamento de pedidos** [cite: 78][cite_start], maior rigor no cumprimento das quantidades solicitadas [cite: 79] [cite_start]e melhorar a comunicação entre fábrica, logística e campo[cite: 77].
 
-3.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+### [cite_start]🚛 Motoristas (Sentimento: Pressão e Sobrecarga) [cite: 81, 83]
+* [cite_start]**Problemas:** **Falta de Planejamento de Rotas** mal otimizadas [cite: 85, 86][cite_start], **Jornadas de Trabalho Extensas** [cite: 87, 88] [cite_start]e comunicação inadequada sobre entregas/acessos[cite: 89, 90].
+* [cite_start]**Sugestões:** Implementar **sistema de planejamento de rotas mais eficiente** [cite: 94, 95] [cite_start]e melhorar a comunicação com expedição e produtores[cite: 96, 97].
 
-## Como Executar
+### [cite_start]⚙️ Gestão (Sentimento: Consciência dos Desafios) [cite: 100, 102]
+* [cite_start]**Problemas:** Falta de **Visibilidade do Estoque** em campo [cite: 104, 105][cite_start], **Processos Manuais** [cite: 106, 107][cite_start], Comunicação Fragmentada [cite: 108, 109] [cite_start]e Capacidade Limitada de produção[cite: 110, 111].
+* [cite_start]**Sugestões:** Focar na **Automação de Processos** [cite: 113, 114] [cite_start]e implementar **Sistema de Gestão de Estoque** para visibilidade em tempo real[cite: 115, 116].
 
-A análise completa pode ser executada de duas maneiras:
+---
 
-1.  **Via script principal:**
-    Execute o `main.py` na raiz do projeto. Ele irá processar os dados, gerar as análises e salvar os gráficos na pasta `plots/`.
-    ```bash
-    python main.py
-    ```
+## 💡 A Solução: Abordagem Sistêmica (Três Pilares)
 
-2.  **Via Jupyter Notebook:**
-    Para uma análise interativa e visualização detalhada, abra e execute as células do notebook `notebooks/analise_pesquisa_fab_racao.ipynb`.
-    ```bash
-    jupyter notebook notebooks/analise_pesquisa_fab_racao.ipynb
-    ```
+[cite_start]A solução exige uma **abordagem integrada e sistêmica** baseada em três pilares fundamentais[cite: 250, 251, 252]:
 
-## Possíveis Próximos Passos (Next Steps)
+### [cite_start]1. Comunicação Eficiente [cite: 253]
+* [cite_start]**Ação:** Implementar um **Canal Centralizado** (aplicativo/portal online) para fazer pedidos, acompanhar o *status* em tempo real e comunicar problemas[cite: 129, 130, 131, 132].
+* [cite_start]**Interna:** Melhorar a integração e alinhamento entre **PCP, expedição e logística**[cite: 137, 140].
 
-- **Dashboard Interativo**: Desenvolver um dashboard com Streamlit ou Dash para permitir que usuários não técnicos explorem os resultados da pesquisa de forma interativa.
-- **Automação do Pipeline**: Criar um pipeline automatizado (ex: com Airflow ou GitHub Actions) que execute a análise periodicamente à medida que novos dados da pesquisa são adicionados.
-- **API de Classificação**: Expor o modelo de clusterização ou sentimento treinado através de uma API REST para classificar novas respostas em tempo real.
-- **Aprimoramento dos Modelos**: Experimentar com modelos de linguagem mais avançados ou realizar fine-tuning específico com dados da empresa para melhorar ainda mais a precisão da classificação e clusterização.
-- **Integração com Banco de Dados**: Migrar o armazenamento de dados de arquivos Excel para um banco de dados (como PostgreSQL ou SQLite) para melhor escalabilidade e gerenciamento.
+### [cite_start]2. Processos Otimizados [cite: 254]
+* [cite_start]**Ação:** **Mapear e Redesenhar o Fluxo** desde a solicitação até a entrega, eliminando gargalos[cite: 152, 153].
+* [cite_start]**Foco na Sobra:** Implementar **Pedidos Programados com Confirmação** para que o produtor possa validar ou ajustar entregas, reduzindo sobras e desperdícios[cite: 159, 160, 163].
+
+### [cite_start]3. Tecnologia Habilitadora [cite: 255]
+* [cite_start]**Ação (Logística):** Adotar um **Sistema de Gestão de Entregas (TMS)** para otimizar rotas e rastrear caminhões em tempo real[cite: 176, 177, 179, 180].
+* [cite_start]**Ação (Estoque):** Instalar **Sensores de Nível nos Silos** nas granjas para visibilidade do estoque em campo 24/7 e planejamento de produção mais preciso[cite: 183, 184, 185, 186].
+* [cite_start]**Ação (Planejamento):** Utilizar **Análise de Dados e Previsão** para otimizar a produção e reduzir desperdício[cite: 190, 191, 194].
+
+---
+
+## ✅ Benefícios Esperados
+
+[cite_start]A implementação dessa abordagem sistêmica resultará em benefícios significativos para toda a cadeia[cite: 256]:
+
+| [cite_start]Para a Empresa [cite: 257] | [cite_start]Para os Produtores [cite: 259] | [cite_start]Para os Animais [cite: 261] |
+| :--- | :--- | :--- |
+| [cite_start]**Aumento de Produtividade** e redução de custos operacionais[cite: 258, 202, 203, 204]. | [cite_start]**Entregas Confiáveis** e volumes corretos[cite: 260, 216, 217]. | [cite_start]**Bem-estar Animal** por nutrição adequada e sem jejum[cite: 228, 229, 230]. |
+| [cite_start]**Melhoria de Imagem** e maior competitividade[cite: 258, 206, 207, 210]. | [cite_start]**Melhoria no Desempenho Zootécnico**[cite: 260, 219, 220]. | [cite_start]**Desempenho Zootécnico** otimizado (ganho de peso/conversão)[cite: 232, 233]. |
+| [cite_start]**Eficiência Logística**[cite: 258]. | [cite_start]**Redução de Estresse** e maior segurança nas operações[cite: 260, 221, 222, 224]. | [cite_start]**Saúde Melhorada** (redução de problemas sanitários)[cite: 234, 235, 236]. |
