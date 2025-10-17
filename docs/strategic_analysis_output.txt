@@ -1,21 +1,18 @@
-Text file: strategic_analysis_output.txt
-Latest content with line numbers:
-1	## Análise Estratégica das Categorias de Problemas
-2	
-3	### Distribuição de Frequência por Categoria
-4	| Categoria                   |   Frequência |   Frequência Cumulativa |   Porcentagem Cumulativa |
-5	|:----------------------------|-------------:|------------------------:|-------------------------:|
-6	| Gestão de Insumos e Estoque |           54 |                      54 |                  46.9565 |
-7	| Processos e Informação      |           36 |                      90 |                  78.2609 |
-8	| Logística e Distribuição    |           25 |                     115 |                 100      |
-9	
-10	### Priorização por Impacto (Regra 80/20)
-11	A categoria de maior impacto, concentrando a maior frequência de problemas, é: **Gestão de Insumos e Estoque** com 54 ocorrências, representando 46.96% do total acumulado.
-12	
-13	### Hipótese de Causa Raiz para a Categoria de Maior Impacto
-14	**Causa Raiz Sugerida:** Falta de visibilidade e controle sobre o estoque em tempo real e falhas no planejamento da demanda. A ausência de um sistema integrado que monitore o consumo e o estoque nas granjas leva a decisões reativas e imprecisas, resultando em falta ou sobra de ração.
-15	
-16	### Ação Estratégica Sugerida
-17	**Iniciativa Prioritária:** Implementação de um sistema de gestão de estoque em tempo real e otimização do planejamento de demanda. Isso incluiria a instalação de sensores de nível nos silos das granjas e a integração com um software que permita prever o consumo e gerenciar os pedidos de forma proativa.
-18	
-19	
+## Análise Estratégica das Categorias de Problemas
+
+### Distribuição de Frequência por Categoria
+| Categoria                   |   Frequência |   Frequência Cumulativa |   Porcentagem Cumulativa |
+|:----------------------------|-------------:|------------------------:|-------------------------:|
+| Gestão de Insumos e Estoque |           54 |                      54 |                  47.3684 |
+| Processos e Informação      |           35 |                      89 |                  78.0702 |
+| Logística e Distribuição    |           25 |                     114 |                 100      |
+
+### Priorização por Impacto (Regra 80/20)
+A categoria de maior impacto, concentrando a maior frequência de problemas, é: **Gestão de Insumos e Estoque** com 54 ocorrências, representando 47.37% do total acumulado.
+
+### Hipótese de Causa Raiz para a Categoria de Maior Impacto
+**Causa Raiz Sugerida:** Falta de visibilidade e controle sobre o estoque em tempo real e falhas no planejamento da demanda. A ausência de um sistema integrado que monitore o consumo e o estoque nas granjas leva a decisões reativas e imprecisas, resultando em falta ou sobra de ração.
+
+### Ação Estratégica Sugerida
+**Iniciativa Prioritária:** Implementação de um sistema de gestão de estoque em tempo real e otimização do planejamento de demanda. Isso incluiria a instalação de sensores de nível nos silos das granjas e a integração com um software que permita prever o consumo e gerenciar os pedidos de forma proativa.
+

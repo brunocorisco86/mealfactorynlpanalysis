@@ -1,11 +1,4 @@
 ### Perfil: Gestão Fábrica de Rações
-#### Pergunta: Na sua opinião, como poderíamos melhorar o processo e evitar falhas na entrega de ração, sejam elas sobra, falta ou erro na entrega?
-
-- Resposta 1: Automação do Amino, não dando condições do operador errar, pois, trabalhamos com uma integração muito grande.
-Tendo visibilidade do estoque a campo.
-
-- Resposta 2: Não minha opinião deveria deixar o produtor pedir a ração depois q envio tipo a pré inicial ai o controle e dele sendo mesmo por ventura deixa falta ração por um descuido ou algo assim mesmo deveria pagar o frete do caminhão de plantão tipo a cvale paga e decantado no.loti assim nao fica aquele jogo de um passa a culpa pro outro 
-
 #### Pergunta: Se pudesse mudar uma coisa no processo para reduzir falhas, qual seria?
 - Resposta 1: Bloqueio de itens manuais no sistema e possibilidade de colocar no sistema mais variáveis, como por exemplo: produtor que não quer receber ração, aviário que será atendido por terceiro, etc.
 - Resposta 2: A produção da fab, nao a expedição a produção deveria rodar no mínimo de domingo a domingo sim pararia pra fazer manutenção lógico mas deixaria tipo 2 prença produzindo q dai os caminhão quando chega na segunda pra trabalhar teria estoque ate o decorrer da semana sem precisar ficar esperando produzir ração 
